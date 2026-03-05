@@ -134,6 +134,40 @@ const Home = () => {
                     <Link to="/knowledge" className="btn-retro">KNOWLEDGE LIBRARY</Link>
                     <Link to="/submit" className="btn-retro">SUBMIT DILEMMA</Link>
                 </div>
+
+                {/* SVG Ocean Elements */}
+                <div className="closing-ocean">
+                    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        {/* Static Waves (pen line style) */}
+                        <path d="M0,150 C200,100 400,200 600,150 C800,100 1000,200 1200,150 C1350,120 1440,150 1440,150" fill="none" stroke="var(--charcoal)" strokeWidth="1.5" opacity="0.4" />
+                        <path d="M0,170 C250,130 500,210 750,170 C1000,130 1250,210 1440,170" fill="none" stroke="var(--charcoal)" strokeWidth="1.2" opacity="0.6" />
+                        <path d="M0,190 C300,160 600,220 900,190 C1200,160 1440,190 1440,190" fill="none" stroke="var(--charcoal)" strokeWidth="2" />
+
+                        {/* Detailed Jumping Fish Drawing */}
+                        <g className="fish-jump">
+                            {/* Fish Body (pen stroke style) */}
+                            <path d="M700,150 C705,130 720,115 745,110 C765,108 780,115 785,125 C788,135 775,145 750,150" fill="none" stroke="var(--charcoal)" strokeWidth="1.2" />
+                            {/* Tail Fin */}
+                            <path d="M700,150 L685,145 L685,155 Z" fill="none" stroke="var(--charcoal)" strokeWidth="1" />
+                            {/* Dorsal Fin */}
+                            <path d="M735,115 Q745,105 755,112" fill="none" stroke="var(--charcoal)" strokeWidth="1" />
+                            {/* Eye */}
+                            <circle cx="775" cy="120" r="1" fill="var(--charcoal)" />
+                            {/* Gills/Scale texture (minimal pen marks) */}
+                            <path d="M760,120 Q758,125 760,130" opacity="0.6" fill="none" stroke="var(--charcoal)" strokeWidth="0.8" />
+                        </g>
+
+                        {/* Enhanced Splash Drawing */}
+                        <g className="splash">
+                            <path d="M690,155 Q685,140 680,150" fill="none" stroke="var(--charcoal)" strokeWidth="0.8" />
+                            <path d="M710,155 Q715,140 720,150" fill="none" stroke="var(--charcoal)" strokeWidth="0.8" />
+                            <path d="M695,160 Q700,152 705,160" fill="none" stroke="var(--charcoal)" strokeWidth="1" />
+                            <circle cx="688" cy="142" r="1" fill="var(--charcoal)" />
+                            <circle cx="712" cy="142" r="1" fill="var(--charcoal)" />
+                            <circle cx="700" cy="138" r="0.8" fill="var(--charcoal)" />
+                        </g>
+                    </svg>
+                </div>
             </section>
         </div>
     );

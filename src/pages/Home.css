@@ -330,7 +330,82 @@
 }
 
 .closing-section {
-    padding: 8rem 0;
+    padding: 8rem 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.closing-ocean {
+    margin-top: 4rem;
+    height: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.closing-ocean svg {
+    width: 100%;
+    height: 100%;
+}
+
+.fish-jump {
+    transform-origin: 700px 150px;
+    animation: jump-around 8s ease-in-out infinite;
+}
+
+.splash {
+    animation: splash-fade 8s ease-in-out infinite;
+}
+
+@keyframes jump-around {
+
+    0%,
+    15% {
+        opacity: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(-15deg);
+    }
+
+    30% {
+        transform: translate(40px, -130px) rotate(10deg);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translate(80px, 0) rotate(30deg);
+    }
+
+    45%,
+    100% {
+        opacity: 0;
+        transform: translate(80px, 0) rotate(30deg);
+    }
+}
+
+@keyframes splash-fade {
+
+    0%,
+    18% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .quote-container {
