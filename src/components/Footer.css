@@ -1,0 +1,45 @@
+.footer {
+    padding: 4rem 0 2rem;
+    border-top: 1px solid rgba(199, 184, 169, 0.3);
+    margin-top: auto;
+    position: relative;
+    z-index: 100;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.footer-brand p {
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(199, 184, 169, 0.2);
+    font-size: 0.85rem;
+    opacity: 0.6;
+}

@@ -1,0 +1,106 @@
+.submit-container {
+    min-height: 80vh;
+}
+
+.submit-form-wrapper {
+    max-width: 800px;
+    width: 100%;
+    padding: 4rem;
+    margin: 4rem 0;
+}
+
+.submit-form-wrapper .page-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    letter-spacing: -0.5px;
+    color: var(--charcoal);
+    margin-bottom: 1rem;
+}
+
+.dilemma-form {
+    margin-top: 3rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-group .optional {
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.6;
+    letter-spacing: 0;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(199, 184, 169, 0.4);
+    padding: 1rem;
+    border-radius: 2px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--charcoal);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--charcoal);
+    background: white;
+    box-shadow: 0 4px 15px rgba(225, 184, 124, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-submit .w-full {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .submit-form-wrapper {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row .form-group {
+        margin-bottom: 2rem;
+    }
+}

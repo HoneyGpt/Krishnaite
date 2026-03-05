@@ -1,0 +1,53 @@
+.contact-container {
+    min-height: 80vh;
+    margin-top: 4rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.pr-8 {
+    padding-right: 2rem;
+}
+
+.contact-methods {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(199, 184, 169, 0.4);
+    padding-top: 2rem;
+}
+
+.method-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.05rem;
+    color: var(--charcoal);
+}
+
+.contact-icon {
+    color: var(--soft-ochre);
+}
+
+.contact-form-wrapper {
+    padding: 3rem;
+    background: rgba(248, 244, 236, 0.6);
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .pr-8 {
+        padding-right: 0;
+    }
+}

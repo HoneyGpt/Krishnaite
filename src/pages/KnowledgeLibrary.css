@@ -1,0 +1,116 @@
+.knowledge-container {
+    min-height: 80vh;
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    letter-spacing: -0.5px;
+    color: var(--charcoal);
+}
+
+.page-subtext {
+    font-size: 1.15rem;
+    font-weight: 300;
+    color: rgba(42, 47, 54, 0.7);
+}
+
+.filters-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--muted-clay);
+    border-radius: 40px;
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.filter-btn:hover {
+    background: rgba(42, 47, 54, 0.05);
+}
+
+.filter-btn.active {
+    background: var(--charcoal);
+    color: var(--warm-sand);
+    border-color: var(--charcoal);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 2rem;
+}
+
+/* Add a very subtle gradient accent to cards */
+.article-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--soft-ochre), transparent);
+    opacity: 0.5;
+}
+
+.article-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--soft-ochre);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.article-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.article-desc {
+    font-size: 0.95rem;
+    color: rgba(42, 47, 54, 0.8);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.article-link {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    width: max-content;
+    padding-bottom: 2px;
+}
+
+.article-link .arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.article-link:hover {
+    border-bottom: 1px solid var(--charcoal);
+    opacity: 1;
+}
+
+.article-link:hover .arrow {
+    transform: translateX(5px);
+}

@@ -1,0 +1,75 @@
+.about-container {
+    min-height: 80vh;
+}
+
+.about-hero {
+    margin-top: 4rem;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.about-block h2 {
+    font-size: 1.75rem;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.about-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(42, 47, 54, 0.85);
+}
+
+.principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.principles-list li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    color: rgba(42, 47, 54, 0.85);
+}
+
+.principles-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--soft-ochre);
+}
+
+.principles-list li strong {
+    font-weight: 500;
+    color: var(--charcoal);
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+}
+
+.decoration-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 80%;
+    background-color: rgba(199, 184, 169, 0.3);
+}
+
+@media (max-width: 900px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .decoration-line {
+        display: none;
+    }
+}
