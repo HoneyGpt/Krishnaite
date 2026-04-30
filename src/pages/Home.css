@@ -329,6 +329,51 @@
     font-weight: 400;
 }
 
+.projects-section,
+.events-section {
+    padding: 6rem 0;
+}
+
+.projects-grid,
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.project-card,
+.event-card {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--charcoal);
+}
+
+.project-title,
+.event-title {
+    font-family: var(--font-sans);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc,
+.event-desc {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(42, 47, 54, 0.8);
+}
+
+.event-date {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--soft-ochre);
+    margin-bottom: 1rem;
+}
+
 .closing-section {
     padding: 8rem 0 0;
     position: relative;

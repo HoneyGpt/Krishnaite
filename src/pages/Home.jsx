@@ -122,6 +122,41 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Our Projects Section */}
+            <section className="projects-section container">
+                <div className="text-center mb-8">
+                    <h2 className="section-title">Our Projects</h2>
+                </div>
+                <div className="projects-grid">
+                    <a href="https://mentozy.app/" target="_blank" rel="noopener noreferrer" className="project-card sketch-card">
+                        <h3 className="project-title">Mentozy</h3>
+                        <p className="project-desc">Our flagship learning and mentorship platform.</p>
+                    </a>
+                    <div className="project-card sketch-card">
+                        <h3 className="project-title">Bhagavad Gita</h3>
+                        <p className="project-desc">Timeless wisdom structured for modern application.</p>
+                    </div>
+                    <div className="project-card sketch-card">
+                        <h3 className="project-title">City of Dwarka</h3>
+                        <p className="project-desc">Strategic urban planning and philosophical exploration.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Events Section */}
+            <section className="events-section container">
+                <div className="text-center mb-8">
+                    <h2 className="section-title">Our Ongoing and Upcoming Events</h2>
+                </div>
+                <div className="events-grid" style={{ display: 'flex', justifyContent: 'center' }}>
+                    <a href="https://unstop.com/hackathons/dev-delight-hack-mentozy-1668061" target="_blank" rel="noopener noreferrer" className="event-card sketch-card" style={{ maxWidth: '600px', width: '100%' }}>
+                        <div className="event-date">Ongoing Event</div>
+                        <h3 className="event-title">Dev Delight Hackathon by Mentozy</h3>
+                        <p className="event-desc">Join our premier hackathon on Unstop. Showcase your strategic thinking and development skills!</p>
+                    </a>
+                </div>
+            </section>
+
             {/* Closing Section */}
             <section className="closing-section container text-center">
                 <div className="quote-container mb-6">
