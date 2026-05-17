@@ -11,6 +11,7 @@ import SubmitDilemma from './pages/SubmitDilemma';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Article from './pages/Article';
+import Enterprise from './pages/Enterprise';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Route path="/submit" element={<SubmitDilemma />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/enterprise" element={<Enterprise />} />
             </Routes>
           </main>
           <Footer />

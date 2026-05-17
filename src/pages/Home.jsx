@@ -114,9 +114,17 @@ const Home = () => {
                     <h2 className="section-title">Real-Life Problems We Address</h2>
                 </div>
                 <div className="problems-grid">
-                    {['Career & Direction', 'Startup & Leadership', 'Ethical Dilemmas', 'Relationships', 'Productivity & Focus', 'Life Decisions'].map((cat, idx) => (
-                        <div key={idx} className="problem-card sketch-card flex-center">
-                            <h3>{cat}</h3>
+                    {[
+                        { title: 'Career & Direction', desc: 'Structured guidance for major professional transitions, alignment checks, and finding your calling.' },
+                        { title: 'Startup & Leadership', desc: 'Ethical frameworks for founders, strategic compliance, and premium talent positioning for growing organizations.' },
+                        { title: 'Ethical Dilemmas', desc: 'Untangling complex personal or corporate conflicts where the right choice is not immediately obvious.' },
+                        { title: 'Relationships', desc: 'Harmonizing personal and professional dynamics with deep philosophical empathy and clear boundaries.' },
+                        { title: 'Productivity & Focus', desc: 'Overcoming mental fatigue, cognitive clutter, and finding steady execution through daily practice.' },
+                        { title: 'Life Decisions', desc: 'Strategic structures to analyze long-term stakes and execute critical choices with absolute clarity.' }
+                    ].map((cat, idx) => (
+                        <div key={idx} className="problem-card sketch-card flex-center" style={{ flexDirection: 'column', gap: '0.75rem', padding: '2rem 1.5rem', minHeight: '180px' }}>
+                            <h3 style={{ fontWeight: '600' }}>{cat.title}</h3>
+                            <p className="problem-desc subtext" style={{ fontSize: '0.9rem', lineHeight: '1.5', opacity: '0.8', margin: 0 }}>{cat.desc}</p>
                         </div>
                     ))}
                 </div>
