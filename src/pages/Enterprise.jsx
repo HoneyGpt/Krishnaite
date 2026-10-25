@@ -73,26 +73,16 @@ const Enterprise = () => {
         setStatus('loading');
         try {
             // Using the same local proxy or production endpoint configured via Vite proxy
-            const response = await fetch('/api/resend/emails', {
+            const response = await fetch('/api/send-enquiry', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer re_eB84JVvV_2AtuSaXc5e3Pw1ja3gp2n9Ee`
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    from: 'Acme <onboarding@resend.dev>',
-                    to: ['hello@krishnaite.dev'],
-                    subject: `B2B Strategic Briefing Request from ${formData.company}`,
-                    html: `
-                        <h2>New B2B Partnership & Strategic Briefing Request</h2>
-                        <p><strong>Name:</strong> ${formData.name}</p>
-                        <p><strong>Work Email:</strong> ${formData.email}</p>
-                        <p><strong>Company/Firm:</strong> ${formData.company}</p>
-                        <p><strong>Partnership Type:</strong> ${formData.partnershipType}</p>
-                        <p><strong>Requested Meeting:</strong> ${bookingDate} at ${bookingTime}</p>
-                        <p><strong>Additional Details:</strong></p>
-                        <p>${formData.message || 'No additional details provided.'}</p>
-                    `
+                    name: formData.name,
+                    email: formData.email,
+                    source: `B2B Strategic Briefing Request from ${formData.company || 'Enterprise Partner'}`,
+                    message: `Partnership Type: ${formData.partnershipType}\nRequested Meeting: ${bookingDate} at ${bookingTime}\nCompany: ${formData.company}\n\nAdditional Details:\n${formData.message || 'None'}`
                 })
             });
 

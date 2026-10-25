@@ -1,75 +1,241 @@
-.about-container {
-    min-height: 80vh;
+/* ==========================================================================
+   KRISHNAITE ABOUT PAGE STYLES
+   ========================================================================== */
+
+.about-agency-page {
+  padding-bottom: 4rem;
 }
 
-.about-hero {
-    margin-top: 4rem;
+.about-hero-section {
+  padding: 5rem 0 3.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(183, 123, 67, 0.08) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border-light);
 }
 
-.grid-2-col {
-    display: grid;
+/* Philosophy Section */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.95fr;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.philosophy-heading {
+  font-size: 2.75rem;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
+}
+
+.philosophy-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #3f423d;
+  margin-bottom: 1.25rem;
+}
+
+.philosophy-emblem-card {
+  padding: 3.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-card-emblem {
+  margin-bottom: 1.5rem;
+}
+
+.about-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--charcoal);
+}
+
+.about-card-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 320px;
+}
+
+.about-emblem-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.spec-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--heritage-bronze);
+  margin-bottom: 0.25rem;
+}
+
+.spec-val {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+/* Mission & Vision */
+.mission-vision-section {
+  background-color: rgba(248, 244, 236, 0.5);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.mission-card,
+.vision-card {
+  padding: 3rem 2.5rem;
+}
+
+.card-micro-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--heritage-bronze);
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.85rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.card-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a4d47;
+}
+
+/* Approach Pillars */
+.approach-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.75rem;
+}
+
+.approach-pillar-card {
+  padding: 2.25rem 1.75rem;
+}
+
+.pillar-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(183, 123, 67, 0.1);
+  color: var(--heritage-bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(183, 123, 67, 0.25);
+}
+
+.approach-pillar-card h4 {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.approach-pillar-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Commitments Banner */
+.commitments-banner {
+  padding: 4rem 3.5rem;
+  background: var(--card-bg-elevated);
+}
+
+.commitments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+  margin-top: 2.5rem;
+}
+
+.commitment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.commitment-icon {
+  color: var(--heritage-bronze);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.commitment-item h5 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 0.35rem;
+}
+
+.commitment-item p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+  .approach-pillars-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    align-items: flex-start;
+  }
 }
 
-.about-block h2 {
-    font-size: 1.75rem;
-    letter-spacing: -0.5px;
-    position: relative;
+@media (max-width: 768px) {
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+  .commitments-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .commitments-banner {
+    padding: 2.5rem 1.5rem;
+  }
+  .philosophy-heading {
+    font-size: 2.15rem;
+  }
 }
 
-.about-block p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: rgba(42, 47, 54, 0.85);
-}
-
-.principles-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.principles-list li {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    position: relative;
-    padding-left: 1.5rem;
-    color: rgba(42, 47, 54, 0.85);
-}
-
-.principles-list li::before {
-    content: '—';
-    position: absolute;
-    left: 0;
-    color: var(--soft-ochre);
-}
-
-.principles-list li strong {
-    font-weight: 500;
-    color: var(--charcoal);
-    font-family: var(--font-serif);
-    font-size: 1.1rem;
-}
-
-.decoration-line {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1px;
-    height: 80%;
-    background-color: rgba(199, 184, 169, 0.3);
-}
-
-@media (max-width: 900px) {
-    .grid-2-col {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .decoration-line {
-        display: none;
-    }
+@media (max-width: 600px) {
+  .approach-pillars-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,0 +1,271 @@
+/* ==========================================================================
+   KRISHNAITE SERVICES PAGE STYLES
+   ========================================================================== */
+
+.services-page {
+  padding-bottom: 4rem;
+}
+
+.services-hero-section {
+  padding: 5rem 0 3.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(183, 123, 67, 0.08) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Department Filter Bar */
+.department-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 2.5rem;
+}
+
+.dept-tab {
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  background: var(--card-bg);
+  color: var(--charcoal);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dept-tab:hover {
+  border-color: var(--heritage-bronze);
+  background: var(--card-bg-elevated);
+}
+
+.dept-tab-active {
+  background: var(--charcoal) !important;
+  color: var(--warm-ivory) !important;
+  border-color: var(--charcoal) !important;
+  font-weight: 600;
+}
+
+/* Detailed List */
+.services-detailed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.department-detail-card {
+  padding: 3.5rem 3rem;
+  scroll-margin-top: 100px;
+}
+
+.dept-header-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dept-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(183, 123, 67, 0.1);
+  color: var(--heritage-bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(183, 123, 67, 0.3);
+  flex-shrink: 0;
+}
+
+.dept-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.dept-meta-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.35rem;
+}
+
+.dept-number {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.dept-title {
+  font-size: 2.25rem;
+  color: var(--charcoal);
+}
+
+.dept-main-desc {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #3b3e39;
+  margin-bottom: 2rem;
+}
+
+/* Strategic Advantage Box */
+.dept-highlight-box {
+  background: rgba(183, 123, 67, 0.06);
+  border-left: 3px solid var(--heritage-bronze);
+  padding: 1.25rem 1.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 2.5rem;
+}
+
+.highlight-tag {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--heritage-bronze);
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.highlight-text {
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Two Columns Grid */
+.dept-columns-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.dept-subheading {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--heritage-bronze);
+  margin-bottom: 1.25rem;
+}
+
+.dept-deliverables-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.deliverable-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--charcoal);
+}
+
+.deliverable-icon {
+  color: var(--heritage-bronze);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.audience-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4f524c;
+  margin-bottom: 1.75rem;
+}
+
+.scoping-notice-box {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  background: rgba(32, 34, 31, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  margin-bottom: 2rem;
+}
+
+.scoping-icon {
+  color: var(--muted-sage);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.scoping-text {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.dept-cta-action .btn-bronze {
+  width: 100%;
+}
+
+/* Transparency Section */
+.transparency-section {
+  padding: 4rem 0 2rem;
+}
+
+.transparency-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 4rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.transparency-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.transparency-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+.transparency-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .dept-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .department-detail-card {
+    padding: 2.5rem 1.75rem;
+  }
+  .dept-title {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dept-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .transparency-card {
+    padding: 2.5rem 1.5rem;
+  }
+}

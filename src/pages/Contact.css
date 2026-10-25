@@ -1,53 +1,270 @@
-.contact-container {
-    min-height: 80vh;
-    margin-top: 4rem;
+/* ==========================================================================
+   KRISHNAITE CONTACT / ENQUIRY PAGE STYLES
+   ========================================================================== */
+
+.contact-agency-page {
+  padding-bottom: 4rem;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 4rem;
+.contact-hero-section {
+  padding: 5rem 0 3.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(183, 123, 67, 0.08) 0%, transparent 60%);
+  border-bottom: 1px solid var(--border-light);
 }
 
-.pr-8 {
-    padding-right: 2rem;
+/* Layout Grid */
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.35fr;
+  gap: 3.5rem;
+  align-items: flex-start;
 }
 
-.contact-methods {
-    margin-top: 3rem;
-    border-top: 1px solid rgba(199, 184, 169, 0.4);
-    padding-top: 2rem;
+/* Left Panel: Info & Workflow */
+.info-card {
+  padding: 3rem 2.5rem;
 }
 
-.method-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.05rem;
-    color: var(--charcoal);
+.info-card-title {
+  font-size: 1.85rem;
+  color: var(--charcoal);
+  margin-bottom: 2rem;
 }
 
-.contact-icon {
-    color: var(--soft-ochre);
+.steps-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
-.contact-form-wrapper {
-    padding: 3rem;
-    background: rgba(248, 244, 236, 0.6);
+.flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
 }
 
-.w-full {
-    width: 100%;
+.flow-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(183, 123, 67, 0.1);
+  border: 1px solid var(--heritage-bronze);
+  color: var(--heritage-bronze);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-@media (max-width: 900px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+.flow-step h5 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 0.35rem;
+}
 
-    .pr-8 {
-        padding-right: 0;
-    }
+.flow-step p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.direct-channels-box {
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.channels-title {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--heritage-bronze);
+  margin-bottom: 1rem;
+}
+
+.channel-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.92rem;
+}
+
+.channel-icon {
+  color: var(--heritage-bronze);
+}
+
+.channel-link {
+  color: var(--charcoal);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.channel-link:hover {
+  color: var(--heritage-bronze);
+}
+
+/* Right Panel: Project Intake Form */
+.form-card {
+  padding: 3.5rem 3rem;
+}
+
+.form-card-title {
+  font-size: 2rem;
+  color: var(--charcoal);
+  margin-bottom: 0.35rem;
+}
+
+.form-card-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.35rem;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.req {
+  color: var(--heritage-bronze);
+  font-weight: 700;
+}
+
+.opt {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background-color: var(--card-bg-elevated);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  transition: all var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--heritage-bronze);
+  box-shadow: 0 0 0 3px rgba(183, 123, 67, 0.15);
+}
+
+.input-error {
+  border-color: #c94a38 !important;
+  background-color: rgba(201, 74, 56, 0.02) !important;
+}
+
+.error-text {
+  font-size: 0.75rem;
+  color: #c94a38;
+  margin-top: 0.35rem;
+  font-weight: 500;
+}
+
+/* Alert States */
+.form-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-alert {
+  background-color: rgba(201, 74, 56, 0.08);
+  border: 1px solid rgba(201, 74, 56, 0.3);
+  color: #9e2a1b;
+}
+
+/* Success State Screen */
+.success-state-container {
+  padding: 3.5rem 1.5rem;
+}
+
+.success-state-icon {
+  color: var(--heritage-bronze);
+  margin-bottom: 1.5rem;
+}
+
+.success-state-title {
+  font-size: 2.25rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.success-state-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3b3e39;
+  max-width: 540px;
+  margin: 0 auto 1rem;
+}
+
+.success-state-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.success-state-sub code {
+  background: rgba(32, 34, 31, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: var(--heritage-bronze);
+  font-weight: 600;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .form-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .info-card {
+    padding: 2.5rem 1.5rem;
+  }
 }

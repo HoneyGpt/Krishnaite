@@ -1,0 +1,288 @@
+/* ==========================================================================
+   KRISHNAITE PROJECT REQUEST CHATBAR STYLES (NON-AI CONVERSATIONAL FORM)
+   ========================================================================== */
+
+.project-chatbar-wrapper {
+  scroll-margin-top: 100px;
+}
+
+.chatbar-card {
+  background-color: var(--card-bg-elevated);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  box-shadow: 0 20px 50px rgba(32, 34, 31, 0.08);
+  position: relative;
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Subtle corner accent */
+.chatbar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--charcoal) 0%, var(--heritage-bronze) 50%, var(--muted-sage) 100%);
+}
+
+.chatbar-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2rem;
+}
+
+.chatbar-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--heritage-bronze);
+  background: rgba(183, 123, 67, 0.1);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.chatbar-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #2e8b57;
+  display: inline-block;
+}
+
+.chatbar-title {
+  font-size: 2.75rem;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.chatbar-subtitle {
+  font-size: 1.08rem;
+  color: #4a4d47;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.chatbar-pricing-note {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+/* Example Prompts Strip */
+.chatbar-examples-strip {
+  margin-bottom: 1.25rem;
+}
+
+.examples-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--heritage-bronze);
+  margin-bottom: 0.5rem;
+}
+
+.examples-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.example-chip {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  color: var(--charcoal);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.example-chip:hover {
+  border-color: var(--heritage-bronze);
+  background: rgba(183, 123, 67, 0.08);
+  color: var(--charcoal);
+}
+
+/* Multiline Textarea Box */
+.chatbar-input-box {
+  background: var(--warm-ivory);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.chatbar-input-box:focus-within {
+  border-color: var(--heritage-bronze);
+  box-shadow: 0 0 0 3px rgba(183, 123, 67, 0.15);
+  background: #FFFFFF;
+}
+
+.chatbar-textarea {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--charcoal);
+  resize: vertical;
+  min-height: 100px;
+  outline: none;
+}
+
+.chatbar-textarea::placeholder {
+  color: #8c8980;
+  font-style: normal;
+}
+
+/* Controls Row */
+.chatbar-controls-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.chatbar-email-field {
+  flex: 1;
+}
+
+.chatbar-email-input {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: var(--warm-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.chatbar-email-input:focus {
+  border-color: var(--heritage-bronze);
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(183, 123, 67, 0.15);
+}
+
+.chatbar-submit-btn {
+  padding: 0.85rem 1.85rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Error Banner */
+.chatbar-error-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-sm);
+  background: rgba(201, 74, 56, 0.08);
+  border: 1px solid rgba(201, 74, 56, 0.25);
+  color: #9e2a1b;
+  font-size: 0.88rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Privacy Note */
+.chatbar-privacy-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(229, 223, 211, 0.6);
+}
+
+.privacy-icon {
+  color: var(--heritage-bronze);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Success State Screen */
+.chatbar-success-state {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.success-icon {
+  color: #2e8b57;
+  margin-bottom: 1.25rem;
+}
+
+.success-title {
+  font-size: 2.25rem;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.success-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #3f423d;
+  margin-bottom: 2rem;
+}
+
+.chatbar-reset-btn {
+  margin: 0 auto;
+}
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .chatbar-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .chatbar-title {
+    font-size: 2.15rem;
+  }
+  .chatbar-controls-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .chatbar-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
